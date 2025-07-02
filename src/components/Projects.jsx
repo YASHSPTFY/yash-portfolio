@@ -23,7 +23,7 @@ const projects = [
     description: "Full-stack application for secure password storage with encryption and biometric login.",
     tech: ["React", "Node.js", "MongoDB", "Express"],
     image: PassopImage,
-    demo: "https://drive.google.com/file/d/your-password-manager-video/view", // Video demo link
+    demo: "https://drive.google.com/file/d/1FLiD6g5KwS6qaryr8yw39lRUUTAggOkj/view", // Video demo link
     github: "https://github.com/YASHSPTFY/password-manager",
     highlights: [
       "JWT authentication",
@@ -36,7 +36,7 @@ const projects = [
     description: "Desktop application simulating light refraction through glass structures.",
     tech: ["Java", "Java Swing", "AWT"],
     image: GameImage,
-    demo: "https://drive.google.com/file/d/your-game-video/view", // Video demo link
+    demo: "https://drive.google.com/file/d/1FSn_D1wntG0RNoHOHF2w0cKfA9-GwuKD/view", // Video demo link
     github: "https://github.com/YASHSPTFY/glass-game",
     highlights: [
       "Physics-based rendering",
