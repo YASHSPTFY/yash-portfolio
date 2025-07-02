@@ -63,7 +63,7 @@ export default function Hero() {
         >
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500">
-              YASH DESAI
+              YASH DESAIhbb
             </span>
           </h1>
           

@@ -1,1 +1,6 @@
 src/assets/*.mp4
+node_modules
+build
+dist
+.env
+.DS_Store
