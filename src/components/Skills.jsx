@@ -39,9 +39,10 @@ const skillGroups = [
     skills: [
       { name: "MongoDB", level: 7, icon: <SiMongodb className="text-green-600" /> },
       { name: "SQL", level: 5, icon: <SiPostman className="text-blue-500" /> },
-      { name: "Mongoose", level: 4, icon: <SiMongodb className="text-green-400" /> },
+      // { name: "Mongoose", level: 4, icon: <SiMongodb className="text-green-400" /> },
       { name: "GraphQL", level: 5, icon: <SiGraphql className="text-pink-500" /> },
-      { name: "Postman", level: 5, icon: <SiPostman className="text-orange-500" /> }
+     { name: "Firebase", level: 3, icon: <SiFirebase className="text-yellow-500" /> },
+
     ]
   },
   {
@@ -60,10 +61,11 @@ const skillGroups = [
     color: "from-amber-500 to-amber-600",
     skills: [
       { name: "Git/Github", level: 8, icon: <FaGitAlt className="text-black dark:text-white" /> },
-      { name: "AWS", level: 4, icon: <FaAws className="text-orange-500" /> },
-      { name: "Docker", level: 3, icon: <FaDocker className="text-blue-400" /> },
-      { name: "Firebase", level: 3, icon: <SiFirebase className="text-yellow-500" /> },
-      { name: "Redux", level: 5, icon: <SiRedux className="text-purple-400" /> }
+      // { name: "AWS", level: 2, icon: <FaAws className="text-orange-500" /> },
+      { name: "Docker", level: 1, icon: <FaDocker className="text-blue-400" /> },
+      { name: "Redux", level: 5, icon: <SiRedux className="text-purple-400" /> },
+      { name: "Postman", level: 5, icon: <SiPostman className="text-orange-500" /> }
+
     ]
   },
   {
@@ -71,8 +73,8 @@ const skillGroups = [
     color: "from-indigo-500 to-indigo-600",
     skills: [
       { name: "TypeScript", level: 4, icon: <SiTypescript className="text-blue-600" /> },
-      { name: "Java", level: 3, icon: <FaJava className="text-red-500" /> },
-      { name: "Spring", level: 3, icon: <SiSpring className="text-green-500" /> },
+      { name: "Java", level: 2, icon: <FaJava className="text-red-500" /> },
+      // { name: "Spring", level: 3, icon: <SiSpring className="text-green-500" /> },
       { name: "Kotlin", level: 2, icon: <SiKotlin className="text-purple-500" /> },
       { name: "C/C++", level: 6, icon: <SiCplusplus className="text-blue-500" /> }
     ]

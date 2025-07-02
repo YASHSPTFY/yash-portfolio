@@ -11,7 +11,7 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     image: MCUImage,
     github: "https://github.com/YASHSPTFY/mcu-website",
-    demo: "https://yashsptfy.github.io/mcu-website", // Your direct live link
+    demo: "https://yash5.neocities.org/", // Your direct live link
     highlights: [
       "Implemented smooth CSS animations",
       "Mobile-first responsive design",

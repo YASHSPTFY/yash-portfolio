@@ -50,8 +50,8 @@ export default function Header({ darkMode, setDarkMode }) {
   };
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'py-2 bg-white/90 dark:bg-gray-900/90 shadow-sm' : 'py-4 bg-transparent'}`}>
-      <div className="container mx-auto px-6">
+    <header className={`fixed w-full  z-50 transition-all duration-300 ${scrolled ? 'py-2 bg-red/900 dark:bg-blue-900/90 shadow-sm' : 'py-4 bg-transparent'}`}>
+      <div className="container  mx-auto px-6">
         <nav className="flex justify-between items-center">
           {/* Logo/Name with animation */}
           <motion.div 

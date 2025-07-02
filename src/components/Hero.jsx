@@ -1,25 +1,74 @@
- import { motion } from 'framer-motion';
+ import { color, motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 
 // Words distributed evenly without photo constraints
-const TECH_WORDS = [
-  // Left cluster
-  { text: "React", x: "15%", y: "20%", size: "text-lg" },
-  { text: "Node.js", x: "10%", y: "35%", size: "text-xl" },
-  { text: "MongoDB", x: "20%", y: "50%", size: "text-md" },
-  
-  // Right cluster 
-  { text: "TypeScript", x: "75%", y: "25%", size: "text-xl" },
-  { text: "Next.js", x: "80%", y: "40%", size: "text-lg" },
-  
+const TECH_WORDS =  [
+  // Top-left
+  { text: "HTML", x: "5%", y: "10%", size: "text-md" },
+  { text: "CSS", x: "12%", y: "5%", size: "text-md" },
+  { text: "JavaScript", x: "25%", y: "8%", size: "text-lg" },
+  { text: "Bootstrap", x: "18%", y: "12%", size: "text-md" },
+  { text: "SASS", x: "10%", y: "18%", size: "text-md" },
+
+  // Left-middle
+  { text: "React", x: "15%", y: "25%", size: "text-lg" },
+  { text: "Angular", x: "28%", y: "22%", size: "text-lg" },
+  { text: "Vue.js", x: "10%", y: "30%", size: "text-md" },
+  { text: "Next.js", x: "22%", y: "33%", size: "text-xl" },
+  { text: "Redux", x: "8%", y: "40%", size: "text-md" },
+  { text: "Tailwind CSS", x: "27%", y: "40%", size: "text-md" },
+
   // Center-top
-  { text: "Clean Code", x: "45%", y: "15%", size: "text-lg" },
-  
-  // Bottom
-  { text: "Docker", x: "25%", y: "75%", size: "text-md" },
-  { text: "REST API", x: "70%", y: "80%", size: "text-md" },
-  { text: "Testing", x: "50%", y: "85%", size: "text-md" }
-];
+  { text: "Clean Code", x: "47%", y: "12%", size: "text-lg" },
+  { text: "TypeScript", x: "58%", y: "18%", size: "text-md" },
+  { text: "REST API", x: "47%", y: "20%", size: "text-md" },
+
+  // Center-middle
+  { text: "Express", x: "35%", y: "45%", size: "text-md" },
+  { text: "Node.js", x: "20%", y: "50%", size: "text-xl" },
+  { text: "MongoDB", x: "30%", y: "53%", size: "text-md" },
+  { text: "MySQL", x: "42%", y: "50%", size: "text-md" },
+  { text: "Firebase", x: "15%", y: "60%", size: "text-md" },
+  { text: "Prisma", x: "40%", y: "60%", size: "text-md" },
+
+  // Center-right
+  { text: "Java", x: "60%", y: "50%", size: "text-lg" },
+  { text: "Python", x: "70%", y: "45%", size: "text-lg" },
+  { text: "Flask", x: "85%", y: "48%", size: "text-xl" },
+  { text: "Django", x: "75%", y: "55%", size: "text-md" },
+  { text: "GraphQL", x: "65%", y: "58%", size: "text-md" },
+
+  // Top-right
+  { text: "Git", x: "78%", y: "20%", size: "text-xl" },
+  { text: "GitHub", x: "88%", y: "25%", size: "text-md" },
+  { text: "Bitbucket", x: "92%", y: "35%", size: "text-md" },
+  { text: "WordPress", x: "80%", y: "40%", size: "text-lg" },
+
+  // Bottom-left
+  { text: "JQuery", x: "10%", y: "75%", size: "text-md" },
+  { text: "AJAX", x: "25%", y: "70%", size: "text-md" },
+  { text: "Vite", x: "20%", y: "78%", size: "text-md" },
+  { text: "Gulp", x: "15%", y: "85%", size: "text-md" },
+
+  // Bottom-center
+  { text: "Docker", x: "42%", y: "77%", size: "text-md" },
+  { text: "Testing", x: "52%", y: "83%", size: "text-md" },
+  { text: "Jest", x: "40%", y: "85%", size: "text-md" },
+  { text: "Postman", x: "50%", y: "72%", size: "text-md" },
+  { text: "Swagger", x: "60%", y: "75%", size: "text-md" },
+
+  // Bottom-right
+  { text: "Nginx", x: "70%", y: "70%", size: "text-md" },
+  { text: "Linux", x: "78%", y: "78%", size: "text-md" },
+  { text: "AWS", x: "88%", y: "72%", size: "text-md" },
+  { text: "Netlify", x: "82%", y: "85%", size: "text-md" },
+  { text: "Vercel", x: "90%", y: "90%", size: "text-md" },
+
+  // Others
+  { text: "SEO", x: "60%", y: "30%", size: "text-md" },
+  { text: "Agile", x: "67%", y: "35%", size: "text-md" }
+]
+;
 
 export default function Hero() {
   return (
@@ -63,19 +112,22 @@ export default function Hero() {
         >
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500">
-              YASH DESAIhbb
+              YASH DESAI
             </span>
           </h1>
           
           <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-gray-700 dark:text-gray-300">
             <TypeAnimation
               sequence={[
-                'TypeScript Expert',
-                2000,
+                'React Expert',
+                1000,
                 'Full-Stack Developer',
-                2000,
-                'Node.js Engineer',
-                2000
+                1000,
+                'MERN Developer',
+                1000,
+                'Node JS Engineer',
+                1000
+                
               ]}
               wrapper="span"
               cursor={true}
